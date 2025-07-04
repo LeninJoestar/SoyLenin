@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="practicas, paginas web, web">
+    <!--Este ya no se usa, es de lo que seria la pagina para que google busque-->
+    <link rel="stylesheet" type="text/css" href="css/estilismo.css">
+    <link rel="shortcut icon" href="img/ventanaicono.ico" type="image/x-icon">
+    <title>Soy Lenin</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src="img/etiqueta.png" alt="etiqueta"  width="340" height="150" onclick="recargarPagina()">
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#presentacion">Acerca</a></li>
+                    <li><a href="#curriculum">Informacion</a></li>
+                    <li><a href="#github">Proyectos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br><br><br>
+    <hr>
+    <section class="wrapper"></section>
+    <!--El section es para agregar un contenido secundario (wrapper es un contenedor y se le dice cuantas section mas queremos)-->
+    <section class="main">
+        <article id="presentacion">
+            <h2>Acerca de mi</h2>
+            <br>
+            <div class="about">
+                <img src="img/Empresarial.jpeg" alt="Lenin Arriaga" width="300" height="390" title="Soy ese">
+            </div>
+            <div class="about">
+                <img src="img/computadora.png" alt="" width="200" height="220"> 
+                <p>Estudiante del tecnologico de San Pedro, apasionado por las tecnologias de desarrollo web. 
+                Estoy en constante aprendizaje, descubriendo nuevas tecnologias que me ayuden a mejorar mis 
+                tecnicas para desarrollar experiencia en la creacion de codigo. Asimismo me enfoco en mejorar
+                mi nueva etapa como desarrollador web junior</p>
+            </div>
+        </article>
+        <br>
+        <hr>
+        <article id="curriculum">
+            <h2>Informacion</h2>
+            <br>
+            <div class="informacion">
+                <img src="img/cv.png" alt="" width="150" height="160"> 
+                <p>Mi informacion personal, acerca de mis estudios, experiencia academica, proyectos, habilidades, 
+                    etcetera, dentro de un curriculum vitae el cual puedes explorar. Puedes ver mi curriculum vitae, 
+                    vinculado al siguiente boton</p>
+                <a href="src/Curriculum_LeninArriaga.pdf" download><input type="button" value="Descargar CV"></a>
+            </div>
+            <div class="informacion">
+                <img src="img/teclado.jpeg" alt="cvitae" width="300" height="390">
+            </div>
+        </article>
+        <br>
+        <hr>
+        <article id="github">
+            <h2>Proyectos (GitHub)</h2>
+            <br>
+            <a href="https://github.com/LeninJoestar/StudyFlowtime.git"><div class="proyecto">
+                <img src="img/ProyectoLogo.jpeg" alt="flowtime" width="150" height="220">
+                <h3>StudyWithFlowtime</h3>
+            </div></a>
+            <a href="https://github.com/LeninJoestar/PracticaApi.git"><div class="proyecto">
+                <img src="img/apiLogo.png" alt="api" width="200" height="220">
+                <h3>Api .NET AdventureWorks2022</h3>
+            </div></a>
+        </article>
+    </section>
+    <br>
+    <hr>
+    <br><br>
+    <footer>
+        <div class="redes">
+            <h3>Contacta conmigo a traves de:</h3>
+            <ul>
+                <li>
+                    <img src="img/gmailgris.png" alt="gmail" width="30" height="30">
+                    <label for="gmail">RLeninVArriaga@gmail.com</label>
+                </li>
+                <li>
+                    <img src="img/outlookgris.png" alt="outlook" width="30" height="30">
+                    <label for="outlook">LArriaga20@outlook.com</label>
+                </li>
+            </ul>
+        </div>
+        <div class="redes">
+            <h3>O si no, echa un vistaso a:</h3>
+            <ul>
+                <li><a href="https://github.com/LeninJoestar"><img src="img/githubgris.png" alt="github" width="30" height="30"></a></li>
+                <li><a href="https://www.linkedin.com/in/ricardo-lenin-vazquez-arriaga-121839293/"><img src="img/linkedingris.png" alt="linkedin" width="30" height="30"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

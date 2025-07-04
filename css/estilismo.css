@@ -1,0 +1,228 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #98A1BC;
+}
+
+header, footer {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header{
+    background: #555879;
+}
+
+footer {
+    text-align: center;
+    background: #DED3C4;
+}
+
+.menu {
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    padding: 20px;
+    padding-bottom: 34px;
+}
+
+.menu ul{
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 0;
+    padding: 0;
+    margin-top: 20px;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+}
+
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #F4EBD3;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu ul li a:hover{
+    color: #c2baa6;
+}
+
+/*Aqui van lo de la presentacion*/
+#presentacion {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#presentacion h2 {
+    background-color: #DED3C4;
+    width: 80%;
+    margin: 1px auto
+}
+
+.about {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+.about p {
+    margin-top: 20px;
+    padding-bottom: 100px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    color: #F4EBD3;
+}
+
+/*Aqui van lo del curriculum*/
+#curriculum {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#curriculum h2 {
+    background-color: #DED3C4;
+    width: 80%;
+    margin: 1px auto
+}
+
+.informacion {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 70px;
+}
+
+.informacion p{
+    margin-top: 0px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: right;
+    color: #F4EBD3;
+}
+
+.informacion input{
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: #F4EBD3;
+    background: #98A1BC;
+    color: #F4EBD3;
+}
+
+/*Aqui va lo de los proyectos*/
+#github {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#github h2 {
+    background-color: #DED3C4;
+    width: 80%;
+    margin: 1px auto
+}
+
+.proyecto {
+    display: inline-block;
+    width: 400px;
+    height: 250px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 70px;
+    border-style: solid;
+    border-color: #F4EBD3;
+}
+
+.proyecto h3{
+    color: #F4EBD3;
+}
+
+/*Aqui va lo del footer*/
+.redes {
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 30px;
+}
+
+.redes ul li{
+    list-style: none;
+}
+
+.redes h3{
+    color: #98A1BC;
+}
+
+/*Extras*/
+hr {
+    width: 80%;
+    margin: 2px auto;
+}
+
+/* Media Query para vista móvil */
+@media (max-width: 768px) {
+    .menu ul li {
+        display: block;
+        margin: 10px 0; /* Espaciado vertical en móvil */
+        margin-left: 0; /* Elimina margen izquierdo */
+    }
+    
+    .about, .informacion, .proyecto {
+        width: 90%; /* Ocupa casi todo el ancho */
+        margin: 15px auto; /* Centrado con margen automático */
+        height: auto; /* Altura flexible */
+    }
+    
+    #presentacion h2, #curriculum h2, #github h2 {
+        width: 95%; /* Más ancho en móvil */
+    }
+    
+    .redes {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Corrección específica para el menú */
+.menu {
+    display: flex; /* Corrige "in-flex" */
+    flex-wrap: wrap;
+    justify-content: center;
+    float: none; /* Elimina el float */
+    margin: 0;
+    padding: 10px;
+}
+
+
+
+/* Contenedores flexibles */
+.about, .informacion, .proyecto {
+    max-width: 100%; /* Evita que sobresalgan */
+    box-sizing: border-box;
+}
