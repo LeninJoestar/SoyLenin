@@ -30,7 +30,6 @@ header{
     height: 80%;
     padding: 2px;
     margin: 2px;
-    cursor: pointer;
 }
 
 .nombre{
@@ -70,7 +69,7 @@ header{
     cursor: pointer;
 }
 
-.sidebar{
+.sidebar {
     width: 200px;
     height: 50%;
     top: 0;
@@ -101,58 +100,38 @@ header{
 /*Parte del contenido general*/
 
 .wrapper{
-    width:100%;
+    width:100%; 
     padding-top:20px;
-    margin-top: 40px;
+}
+
+#flecha-atras{
+    width: 60px;
+    margin-left: 40px;
 }
 
 .seccion{
     margin: 0 auto;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .imagen-contenido{
-    width: 30%;
-    margin: 0 2% 0 2%;
-    border-radius: 100%;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
 }
 
 .texto-contenido{
-    width: 40%;
-    text-align: justify;
-    align-self: center;
-}
-
-.botones{
-    height: 140px;
-    text-align: center;
-}
-
-.resumen-elemento{
-    width: 11%;
+    width: 50%;
     height: 100%;
-    margin: 30px;
-    border-radius: 100%;
+    text-align: justify;
+}
+
+.texto-contenido a{
     text-decoration: none;
-    line-height: 140px;
-    font-size: x-large;
-    font-weight: bold;
-    color: #000000;
-    border: #000000 solid 1px;
-}
-
-#curriculum{
-    background: #F7D0A9;
-}
-
-#proyectos{
-    background: #A1C0AE;
-}
-
-#certificados{
-    background: #B4585D;
+    color: #5C4152;
 }
 
 hr{
@@ -189,9 +168,6 @@ footer{
         width: 10%;
     }
     /*Wrapper*/
-    span{
-        font-size: 20px;
-    }
     /*Footer*/
 }
 
@@ -201,14 +177,18 @@ footer{
         font-size: 15px;
     }
     /*Wrapper*/
-    .resumen-elemento{
-        width: 12%;
+    .imagen-contenido{
+        width: 80px;
+        height: 80px;
+    }
+
+    .texto-contenido{
+        font-size: small;
     }
     /*Footer*/
     footer{
         font-size: small;
     }
-
     .footer-elemento{
         width: 14%;
         margin: 0 4% 0 4%;
@@ -221,8 +201,13 @@ footer{
         font-size: small;
     }
     /*Wrapper*/
-    .resumen-elemento{
-        width: 14%;
+    .imagen-contenido{
+        width: 70px;
+        height: 70px;
+    }
+
+    .texto-contenido{
+        font-size: small;
     }
     /*Footer*/
 }
@@ -232,23 +217,18 @@ footer{
     #espacio-elementos{
         width: 20%;
     }
-
     .menu-elemento{
         font-size: x-small;
     }
     /*Wrapper*/
-    .resumen-elemento{
-        width: 15%;
-    }
-
-    span{
-        font-size: 18px;
+    .imagen-contenido{
+        width: 48px;
+        height: 48px;
     }
     /*Footer*/
     footer{
         font-size: x-small;
     }
-
     .imagen-footer{
         width: 30px;
         height: 30px;
@@ -273,28 +253,32 @@ footer{
         width: 40px;
     }
     /*Wrapper*/
-    .texto-contenido{
-        font-size: small;
+    .seccion{
+        display: grid;
+        justify-items: center;
     }
 
-    .resumen-elemento{
-        width: 18%;
+    .imagen-contenido{
+        width: 120px;
+        height: 120px;
+    }
+
+    .texto-contenido{
+        margin-bottom: 15px;
+        font-size: large;
     }
     /*Footer*/
     footer{
         font-size: medium;
         text-align: center;
     }
-
     #contactos{
         display: block;
     }
-
     .footer-elemento{
         width: 80%;
         margin: 0px 10% 12px 10%;
     }
-
     .imagen-footer{
         width: 35px;
         height: 35px;
@@ -307,30 +291,6 @@ footer{
         font-size: 12px;
     }
     /*Wrapper*/
-    .wrapper{
-        margin-top: 10px;
-    }
-
-    .seccion{
-        display: block;
-        height: 100%;
-        text-align: center;
-    }
-    
-    .texto-contenido{
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .imagen-contenido{
-        margin-top: 20px;
-    }
-
-    .resumen-elemento{
-        width: 20%;
-        display: block;
-        margin: 12px auto;
-    }
     /*Footer*/
 }
 
@@ -340,9 +300,6 @@ footer{
         font-size: 10.5px;
     }
     /*Wrapper*/
-    .resumen-elemento{
-        width: 23%;
-    }
     /*Footer*/
 }
 
@@ -351,18 +308,10 @@ footer{
     .menu-elemento{
         font-size: x-small;
     }
-
     #espacio-elementos{
         width: 12%;
     }
     /*Wrapper*/
-    .texto-contenido{
-        font-size: x-small;
-    }
-
-    .resumen-elemento{
-        width: 25%;
-    }
     /*Footer*/
 }
 
@@ -372,9 +321,6 @@ footer{
         width: 10%;
     }
     /*Wrapper*/
-    .resumen-elemento{
-        width: 28%;
-    }
     /*Footer*/
 }
 
