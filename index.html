@@ -3,102 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="practicas, paginas web, web">
-    <!--Este ya no se usa, es de lo que seria la pagina para que google busque-->
-    <link rel="stylesheet" type="text/css" href="css/estilismo.css">
-    <link rel="shortcut icon" href="img/ventanaicono.ico" type="image/x-icon">
-    <title>Soy Lenin</title>
+    <link rel="stylesheet" href="css/estilismo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logopagina.ico" type="image/x-icon">
+    <script src="jquery/js/jquery-4.0.0.min.js"></script>
+    <script src="javascript/funciones.js"></script>
+    <script src="jquery/jquery-ui-1.14.2/jquery-ui.min.js"></script>
+    <title>SoyLenin</title>
 </head>
 <body>
     <header>
-        <div class="menu">
-            <img src="img/etiqueta.png" alt="etiqueta"  width="340" height="150" onclick="recargarPagina()">
+        <nav id="menu">
+            <h4 class="menu-elemento nombre">Ricardo Lenin Vazquez Arriaga</h4><p class="menu-elemento">Ingeniero en sistemas | Diseñador Full-Stack</p>
+            <div id="espacio-elementos"></div>
+            <a class="menu-elemento enlace" href="index.html">Acerca de</a>
+            <a class="menu-elemento enlace" href="assets/Curriculum_LeninArriaga.pdf">Curriculum</a>
+            <a class="menu-elemento enlace" href="subpaginas/proyectos.html">Proyectos</a>
+            <a class="menu-elemento enlace" href="subpaginas/certificados.html">Certificados</a>
+            <button class="menu-desplegable"><img class="icono-desplegable" src="img/desplegable.png" alt="menu"></button>
+        </nav>
+        <div class="sidebar">
+            <button class="menu-desplegable cerrar"><img class="icono-desplegable" src="img/desplegable.png" alt="menu"></button>
+                <a class="desplegable-elemento" href="index.html">Acerca de</a>
+                <a class="desplegable-elemento" href="assets/Curriculum_LeninArriaga.pdf">Curriculum</a>
+                <a class="desplegable-elemento" href="subpaginas/proyectos.html">Proyectos</a>
+                <a class="desplegable-elemento" href="subpaginas/certificados.html">Certificados</a>
         </div>
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="#presentacion">Acerca</a></li>
-                    <li><a href="#curriculum">Informacion</a></li>
-                    <li><a href="#github">Proyectos</a></li>
-                    <li><a href="#contactos">Contactos</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div id="overlay"></div>
     </header>
-    <br><br><br>
-    <hr>
-    <section class="wrapper"></section>
-    <!--El section es para agregar un contenido secundario (wrapper es un contenedor y se le dice cuantas section mas queremos)-->
-    <section class="main">
-        <article id="presentacion">
-            <h2>Acerca de mi</h2>
-            <br>
-            <div class="about">
-                <img src="img/Empresarial.jpeg" alt="Lenin Arriaga" width="300" height="390" title="Soy ese">
-            </div>
-            <div class="about">
-                <img src="img/computadora.png" alt="" width="200" height="220"> 
-                <p>Estudiante del tecnologico de San Pedro, apasionado por las tecnologias de desarrollo web. 
-                Estoy en constante aprendizaje, descubriendo nuevas tecnologias que me ayuden a mejorar mis 
-                tecnicas para desarrollar experiencia en la creacion de codigo. Asimismo me enfoco en mejorar
-                mi nueva etapa como desarrollador web junior</p>
-            </div>
-        </article>
-        <br>
-        <hr>
-        <article id="curriculum">
-            <h2>Informacion</h2>
-            <br>
-            <div class="informacion">
-                <img src="img/cv.png" alt="" width="150" height="160"> 
-                <p>Mi informacion personal, acerca de mis estudios, experiencia academica, proyectos, habilidades, 
-                    etcetera, dentro de un curriculum vitae el cual puedes explorar. Puedes ver mi curriculum vitae, 
-                    vinculado al siguiente boton</p>
-                <a href="assets/CV_LeninArriaga.pdf" download="CV_LeninArriaga.pdf"><input type="button" value="Descargar CV"></a>
-                <a href="assets/Portafolio_Lenin.pdf" download="Portafolio_Lenin.pdf"><input type="button" value="Portafolio"></a>
-            </div>
-            <div class="informacion">
-                <img src="img/teclado.jpeg" alt="cvitae" width="300" height="390">
-            </div>
-        </article>
-        <br>
-        <hr>
-        <article id="github">
-            <h2>Proyectos (GitHub)</h2>
-            <br>
-            <a href="https://github.com/LeninJoestar/StudyFlowtime.git"><div class="proyecto">
-                <img src="img/ProyectoLogo.jpeg" alt="flowtime" width="150" height="220">
-                <h3>StudyWithFlowtime</h3>
-            </div></a>
-            <a href="https://github.com/LeninJoestar/PracticaApi.git"><div class="proyecto">
-                <img src="img/apiLogo.png" alt="api" width="200" height="220">
-                <h3>Api .NET AdventureWorks2022</h3>
-            </div></a>
-        </article>
-    </section>
-    <br>
-    <hr>
-    <br><br>
-    <footer id="contactos">
-        <div class="redes">
-            <h3>Contacta conmigo a traves de:</h3>
-            <ul>
-                <li>
-                    <img src="img/gmailgris.png" alt="gmail" width="30" height="30">
-                    <label for="gmail">RLeninVArriaga@gmail.com</label>
-                </li>
-                <li>
-                    <img src="img/outlookgris.png" alt="outlook" width="30" height="30">
-                    <label for="outlook">LArriaga20@outlook.com</label>
-                </li>
-            </ul>
+    <div class="wrapper">
+        <div class="seccion acerca">
+            <img class="imagen-contenido" src="img/myself.jpeg" alt="yomismo">
+            <p class="texto-contenido"><b>Un poco que saber sobre mi</b><br><br>Soy Ricardo Lenin Vazquez Arriaga, una persona entusiasta en diferentes temas de interes, especialmente de la tecnologia, del gaming y popurri. Generalmente abierto a aprender nuevas tecnologias y aportar un grano de arena con mi propio esfuerzo al mundo mediante la creacion de nuevas herramientas y consolidar la experiencia ya adquirida.</p>
         </div>
-        <div class="redes">
-            <h3>O si no, echa un vistaso a:</h3>
-            <ul>
-                <li><a href="https://github.com/LeninJoestar"><img src="img/githubgris.png" alt="github" width="30" height="30"></a></li>
-                <li><a href="https://www.linkedin.com/in/ricardo-lenin-vazquez-arriaga-121839293/"><img src="img/linkedingris.png" alt="linkedin" width="30" height="30"></a></li>
-            </ul>
+        <br><br><br>
+        <div class="seccion resumen">
+            <p class="texto-contenido"><b>Resumen de mi trabajo</b><br><br>Ingeniero en sistemas computacionales, desarrollador web y desarrollador de software Full-Stack, con conocimientos en diferentes lenguajes de programacion y de distintas herramientas informaticas. En constante aprendizaje en aprender nuevas vias de desarrollo y de programacion. He aqui un resumen de mis habilidades, logros y proyectos.</p>
+            <img class="imagen-contenido" src="img/teclado.jpeg" alt="ilustracion">
+        </div>
+        <br><br><br>
+        <div class="seccion botones">
+            <a id="curriculum" class="resumen-elemento" href="assets/Curriculum_LeninArriaga.pdf"><span>Curriculum</span></a>
+            <a id="proyectos" class="resumen-elemento" href="subpaginas/proyectos.html"><span>Proyectos</span></a>
+            <a id="certificados" class="resumen-elemento" href="subpaginas/certificados.html"><span>Certificados</span></a>
+        </div>
+        <br><br><br>
+    </div>
+    <hr>
+    <footer>
+        <div id="contactos">
+            <div class="footer-elemento">
+                <h3>E-mail</h3>
+                <p>LArriaga20@outlook.com</p>
+            </div>
+            <div class="footer-elemento">
+                <h3>G-mail</h3>
+                <p>RLeninVArriaga@gmail.com</p>
+            </div>
+            <div class="footer-elemento">
+                <h3>Redes sociales</h3>
+                <a href="https://github.com/LeninJoestar"><img class="imagen-footer" src="img/iconoGithub.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/ricardo-lenin-vazquez-arriaga-121839293/"><img class="imagen-footer" src="img/iconoLinkedln.png" alt="linkedln"></a>
+                <a href="https://x.com/LugasWin"><img class="imagen-footer" src="img/iconoX.png" alt="x"></a>
+            </div>
+            <div class="footer-elemento">
+                <p><u>Politica de privacidad</u></p>
+                &copy; 2026 creado por Lenin Arriaga
+            </div>
         </div>
     </footer>
 </body>
