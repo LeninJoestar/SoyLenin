@@ -270,15 +270,19 @@ footer{
     /*Footer*/
     footer{
         font-size: medium;
-        text-align: center;
     }
+
     #contactos{
         display: block;
+        position: absolute;
+        padding-left: 10px;
     }
+
     .footer-elemento{
         width: 80%;
-        margin: 0px 10% 12px 10%;
+        margin-bottom: 20px;
     }
+
     .imagen-footer{
         width: 35px;
         height: 35px;
@@ -319,6 +323,15 @@ footer{
     /*Header*/
     #espacio-elementos{
         width: 10%;
+    }
+    /*Wrapper*/
+    /*Footer*/
+}
+
+@media (max-width: 480px) {
+    /*Header*/
+    #espacio-elementos{
+        width: 2%;
     }
     /*Wrapper*/
     /*Footer*/

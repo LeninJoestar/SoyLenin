@@ -283,16 +283,17 @@ footer{
     /*Footer*/
     footer{
         font-size: medium;
-        text-align: center;
     }
 
     #contactos{
         display: block;
+        position: absolute;
+        padding-left: 10px;
     }
 
     .footer-elemento{
         width: 80%;
-        margin: 0px 10% 12px 10%;
+        margin-bottom: 20px;
     }
 
     .imagen-footer{
@@ -373,7 +374,19 @@ footer{
     }
     /*Wrapper*/
     .resumen-elemento{
-        width: 28%;
+        width: 29%;
+    }
+    /*Footer*/
+}
+
+@media (max-width: 480px) {
+    /*Header*/
+    #espacio-elementos{
+        width: 2%;
+    }
+    /*Wrapper*/
+    .resumen-elemento{
+        width: 32%;
     }
     /*Footer*/
 }
