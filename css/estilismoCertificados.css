@@ -305,6 +305,9 @@ footer{
     }
     /*Wrapper*/
     /*Footer*/
+    footer{
+        font-size: x-small;
+    }
 }
 
 @media (max-width: 580px) {
@@ -332,6 +335,18 @@ footer{
     /*Header*/
     #espacio-elementos{
         width: 2%;
+    }
+    /*Wrapper*/
+    /*Footer*/
+}
+
+@media (max-width: 441px) {
+    /*Header*/
+    .titulo{
+        font-size: 7px
+    }
+    #espacio-elementos{
+        width: 0%;
     }
     /*Wrapper*/
     /*Footer*/
